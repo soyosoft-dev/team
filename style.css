@@ -1,48 +1,60 @@
 body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #f5f9fc;
-  color: #333;
   margin: 0;
-  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+  color: #333;
 }
 
-header {
-  background-color: #cceeff;
-  padding: 1em;
-  text-align: center;
-}
-
-nav a {
-  color: #0077aa;
-  text-decoration: none;
-  margin: 0 1em;
-}
-
-.members {
+.container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 2em;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.member-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #ccc;
-  margin: 1em;
-  padding: 1em;
-  width: 250px;
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 40px;
   text-align: center;
+  max-width: 400px;
+  width: 90%;
 }
 
-.member-card img {
-  width: 100px;
+.avatar {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-}
-
-.member-card img {
-  width: 100px;
-  height: 100px;
   object-fit: cover;
-  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.role {
+  font-weight: bold;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #1d6fa5;
 }
